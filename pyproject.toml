@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "schema-infer"
+version = "0.1.0"
+description = "Infer schemas from Python objects with unions, nested types, and JSON-Schema export."
+authors = [{name = "Andreas Koch", email = "andreas@andreas-koch.dk"}]
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+keywords = ["schema", "inference", "jsonschema", "typing", "data", "avroschema"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Libraries",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/andreaskdk/schema-infer"
+Repository = "https://github.com/andreaskdk/schema-infer"
+Issues = "https://github.com/andreaskdk/schema-infer/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
